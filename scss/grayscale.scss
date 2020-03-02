@@ -36,4 +36,29 @@ a {
 
 footer {
   padding: 5rem 0;
+  color: white;
+}
+
+.row-centered {
+  text-align:center;
+}
+.col-centered {
+  display:inline-block;
+  float:none;
+  /* reset the text-align */
+  text-align:left;
+  /* inline-block space fix */
+  margin-right:-4px;
+}
+
+.org img {
+  width: 100%;
+  max-width: 350px;
+  margin: 35px 0;
+  border: solid 3px white;
+}
+
+.org h3 {
+  min-height: 60px;
+  margin: 0;
 }
