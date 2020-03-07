@@ -21,7 +21,7 @@
     $('.navbar-collapse').collapse('hide');
   });
 
-  $('.js-switch').click(function() {
+  $('#switch-button').click(function() {
     if (old_school) {
       $( ".old-school" ).addClass("new-school");
       $( ".new-school" ).removeClass("old-school");
