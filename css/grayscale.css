@@ -37,6 +37,12 @@
   background-color: #161616;
 }
 
+#mainNav .navbar-nav button {
+  background: none !important;
+  color: #db0202;
+  border: #db0202 5px;
+}
+
 @media (min-width: 992px) {
   #mainNav {
     padding-top: 0;
@@ -67,8 +73,15 @@
     color: #fff;
   }
   #mainNav.navbar-shrink .nav-link {
-    color: #fff;
     padding: 1.5rem 1.5rem 1.25rem;
+  }
+  #mainNav.navbar-shrink .nav-link a {
+    color: #fff;
+  }
+  #mainNav.navbar-shrink .nav-link button {
+    background: none !important;
+    color: #db0202;
+    border: #db0202 5px;
   }
   #mainNav.navbar-shrink .nav-link:hover {
     color: #db0202;
@@ -338,4 +351,8 @@ footer {
   font-size: x-large;
   color: white;
   padding-top: 5em;
+}
+
+.old-school {
+  font-family: "New Times";
 }
