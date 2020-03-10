@@ -96,55 +96,30 @@
   }
 }
 
+.masthead.old-school {
+  background-image: url("../img/top-old-school.gif");
+  height: auto;
+}
+
+.masthead.new-school {
+  background-image: url("../img/intro.jpg");
+  height: available;
+}
+
 .masthead {
   position: relative;
   width: 100%;
-  height: auto;
   min-height: 35rem;
-  padding: 15rem 0;
   margin-top: 56px;
-  background: url("../img/intro-bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
 }
 
-.masthead h1 {
-  font-family: 'Varela Round';
-  font-size: 2.5rem;
-  line-height: 2.5rem;
-  letter-spacing: 0.8rem;
-  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-}
-
-.masthead h2 {
-  max-width: 20rem;
-  font-size: 1rem;
-}
-
-@media (min-width: 768px) {
-  .masthead h1 {
-    font-size: 4rem;
-    line-height: 4rem;
-  }
-}
-
 @media (min-width: 992px) {
   .masthead {
     height: 100vh;
-    padding: 0;
-  }
-  .masthead h1 {
-    font-size: 6.5rem;
-    line-height: 6.5rem;
-    letter-spacing: 0.8rem;
-  }
-  .masthead h2 {
-    max-width: 30rem;
-    font-size: 1.25rem;
   }
 }
 
@@ -175,15 +150,44 @@
   background-color: #8f0101 !important;
 }
 
-.about-section {
+.about-section.new-school {
   padding-top: 5rem;
   padding-bottom: 2rem;
   background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
 }
 
-.about-section p {
+.about-section.new-school p {
+  margin-bottom: 2rem;
+  color: #adb5bd;
+}
+
+.about-section.new-school h3 {
   margin-bottom: 3rem;
-  font-size: x-large;
+  color: #adb5bd;
+}
+
+.about-section.new-school h2 {
+  color: white;
+}
+
+.about-section.old-school {
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+}
+
+.about-section.old-school p {
+  margin-bottom: 3rem;
+}
+
+.about-section.old-school h2 {
+  transform: perspective(200px) rotateX(30deg) scaleY(1.65);
+  font-weight: 900;
+  color: transparent;
+  background: linear-gradient(#551700, #fecb00);
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px #b2b2b2;
+  -webkit-background-clip: text;
+  letter-spacing: 0.1vw;
 }
 
 .projects-section {
@@ -354,5 +358,23 @@ footer {
 }
 
 .old-school {
-  font-family: "New Times";
+  font-family: New Times Roman;
 }
+
+.old-school hr {
+  margin: 40px;
+  border: none;
+  height: 4px;
+}
+
+hr.old-school {
+  background: #ff0000;
+  background: linear-gradient(-45deg, #ff0000 0%, #ffff00 25%, #00ff00 50%, #00ffff 75%, #0000ff 100%);
+}
+
+hr.new-school {
+  clear: both;
+  visibility: hidden;
+  margin: 0;
+}
+
