@@ -33,6 +33,7 @@
 }
 
 #mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
+  color: #fff;
   outline: none;
   background-color: #161616;
 }
@@ -74,6 +75,7 @@
   }
   #mainNav.navbar-shrink .nav-link {
     padding: 1.5rem 1.5rem 1.25rem;
+    color: #fff;
   }
   #mainNav.navbar-shrink .nav-link a {
     color: #fff;
@@ -87,7 +89,7 @@
     color: #db0202;
   }
   #mainNav.navbar-shrink .nav-link:active {
-    color: #8f0101;
+    color: #fff;
   }
   #mainNav.navbar-shrink .nav-link.active {
     color: #db0202;
@@ -190,6 +192,17 @@
   letter-spacing: 0.1vw;
 }
 
+.about-section.old-school h3 {
+  transform: perspective(200px) rotateX(30deg) scaleY(1.65);
+  font-weight: 900;
+  color: transparent;
+  background: linear-gradient(#551700, #fecb00);
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px #b2b2b2;
+  -webkit-background-clip: text;
+  letter-spacing: 0.1vw;
+}
+
 .projects-section {
   padding: 10rem 0;
 }
@@ -221,25 +234,14 @@
   }
 }
 
-.signup-section {
+.signup-section.new-school {
   padding: 10rem 0;
-  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/bg-signup.jpg");
+  background: linear-gradient(to top, black 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
   color: #fff;
-}
-
-.signup-section .form-inline input {
-  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
-  padding: 1.25rem 2rem;
-  height: auto;
-  font-family: 'Varela Round';
-  font-size: 80%;
-  text-transform: uppercase;
-  letter-spacing: 0.15rem;
-  border: 0;
 }
 
 .contact-section {
@@ -350,7 +352,7 @@ footer {
   margin: 5em;
 }
 
-.motivation {
+.motivation.new-school {
   background-color: black;
   font-size: x-large;
   color: white;
@@ -378,3 +380,26 @@ hr.new-school {
   margin: 0;
 }
 
+#info.old-school h1 {
+  margin-bottom: 2em;
+  transform: perspective(100px) rotateY(6deg) rotateZ(-3deg) skewY(15deg) scale(0.8, 1.25);
+  font-family: Impact, sans-serif;
+  color: transparent;
+  background: linear-gradient(to left, #747474, #fff, #747474);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  z-index: -1;
+  text-shadow: -1px 0 0 #72745b, 0 1px 0 #2c2d23, -2px 1px 0.5px #72745b, -1px 2px 0.5px #2c2d23, -3px 2px 0.5px #72745b, -2px 3px 0.5px #2c2d23, -4px 3px 0.5px #72745b, -3px 4px 0.5px #2c2d23, -5px 4px 0.5px #72745b, -4px 5px 0.5px #2c2d23, -6px 5px 0.5px #72745b, -5px 6px 0.5px #2c2d23, -7px 6px 0.5px #72745b, -6px 7px 0.5px #2c2d23, -8px 7px 0.5px #72745b, -7px 8px 0.5px #2c2d23, -9px 8px 0.5px #72745b, -8px 9px 0.5px #2c2d23, -10px 9px 0.5px #72745b, -9px 10px 0.5px #2c2d23, -11px 10px 0.5px #72745b, -10px 11px 0.5px #2c2d23, -12px 11px 0.5px #72745b, -11px 12px 0.5px #2c2d23, -13px 12px 0.5px #72745b, -12px 13px 0.5px #2c2d23, -14px 13px 0.5px #72745b, -13px 14px 0.5px #2c2d23, -15px 14px 0.5px #72745b, -14px 15px 0.5px #2c2d23, -16px 15px 0.5px #72745b, -15px 16px 0.5px #2c2d23, -17px 16px 0.5px #72745b, -16px 17px 0.5px #2c2d23, -18px 17px 0 #72745b, -17px 18px 0 #2c2d23;
+}
+
+#info.old-school h3 {
+  transform: scale(1.05, 1.25);
+  font-weight: 900;
+  color: transparent;
+  background: repeating-linear-gradient(180deg, transparent, transparent 1px, #ffff00 1px, #ffff00 4px), repeating-linear-gradient(-50deg, #808080, #808080 5px, #ffff00 5px, #ffff00 8px);
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px #000;
+  -webkit-background-clip: text;
+  z-index: -1;
+  text-shadow: 3px 2px 0 #999;
+}

@@ -26,11 +26,17 @@
       $( ".old-school" ).addClass("new-school");
       $( ".new-school" ).removeClass("old-school");
       $("#switch-button").text("Chybná verze");
+      $("#quote-img").attr("src", "img/statue.jpg");
+      $("#motivation-quote").text("\"Největší chyba, kterou v životě můžete udělat, je mít pořád strach, že nějakou uděláte.\"");
+      $("#motivation-author").text("Elbert Hubbard");
       old_school = false;
     } else {
       $( ".new-school" ).addClass("old-school");
       $( ".old-school" ).removeClass("new-school");
       $("#switch-button").text("Bezchybná verze");
+      $("#quote-img").attr("src", "img/soudruzi.jpg");
+      $("#motivation-quote").text("\"Nebuď jako soudruzi z NDR a přihlaš se!\"");
+      $("#motivation-author").text("Organizátorský tým");
       old_school = true;
     }
   });

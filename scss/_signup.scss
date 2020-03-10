@@ -1,8 +1,10 @@
-.signup-section {
+.signup-section.new-school {
   padding: 10rem 0;
+  background: linear-gradient(to top, black 0%,#{fade-out($black, .1)} 75%,#{fade-out($black, .2)} 100%);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
   color: $white;
 }
+

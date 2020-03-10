@@ -34,5 +34,16 @@
     letter-spacing: 0.1vw;
 }
 
+.about-section.old-school h3 {
+  transform: perspective(200px) rotateX(30deg) scaleY(1.65);
+  font-weight: 900;
+  color: transparent;
+  background: linear-gradient(#551700, #fecb00);
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px #b2b2b2;
+  -webkit-background-clip: text;
+  letter-spacing: 0.1vw;
+}
+
 
 
