@@ -1,3 +1,6 @@
+Web for a weekend event. Deployed to https://smijeva.github.io/bez-chybi-web. Implementation is on hold because the event is postponed to autumn 2020.
+
+Based on the template:
 # [Start Bootstrap - Grayscale](https://startbootstrap.com/template-overviews/grayscale/)
 
 [Grayscale](http://startbootstrap.com/template-overviews/grayscale/) is a multipurpose, one page HTML theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
