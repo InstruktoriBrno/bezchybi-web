@@ -8,6 +8,7 @@
 #mainNav {
   min-height: 56px;
   width: 100%;
+  box-sizing: border-box;
   background: #161616;
 }
 
