@@ -97,6 +97,9 @@ hr.old-school{
 
 #quote-img {
   width: 100vw;
+  @media (min-width: 992px) {
+    width: 50vw;
+  }
 }
 
 hr.new-school {

@@ -522,6 +522,12 @@ hr.old-school {
   width: 100vw;
 }
 
+@media (min-width: 992px) {
+  #quote-img {
+    width: 50vw;
+  }
+}
+
 hr.new-school {
   clear: both;
   visibility: hidden;
