@@ -7,7 +7,7 @@
 @charset "UTF-8";
 #mainNav {
   min-height: 56px;
-  width: 100%;
+  width: 100vw;
   box-sizing: border-box;
   background: #161616;
 }
