@@ -1,4 +1,11 @@
 .contact-section {
+  .btn {
+    background-color: $white;
+    &:hover {
+      background-color: fade-out($primary, 0.5);
+    }
+  }
+
   padding: 5rem 0 0;
   color: $gray-300;
   h2 {

@@ -16,8 +16,46 @@
     padding: .9rem 0;
   }
 
+  .nav-link {
+    transition: none;
+    color: $white;
+    &:hover {
+      color: fade-out($white, .25);
+    }
+    &:active {
+      color: white;
+    }
+  }
+  &.navbar-shrink {
+    color: white;
+    .navbar-brand {
+      color: white;
+    }
+    .nav-link {
+      color: white;
+      a {
+        color: white;
+      }
+      button {
+        background: none!important;
+        color: $primary;
+      }
+      &:hover {
+        color: $primary;
+      }
+      &:active {
+        color: $primary;
+      }
+      &.active {
+        color: $primary;
+        outline: none;
+      }
+    }
+  }
+
   .navbar-nav {
     .nav-item {
+      color:$white;
       &:hover {
         color: darken($primary, 15%);
         outline: none;
@@ -43,6 +81,7 @@
     padding-bottom: 0;
     border-bottom: none;
     background-color: $gray-800;
+    color: white;
     transition: background-color 0.3s ease-in-out;
     .navbar-brand {
       padding: .5rem 0;
@@ -60,15 +99,15 @@
       }
     }
     &.navbar-shrink {
-      background-color: $black;
+      color: white;
       .navbar-brand {
-        color: $white;
+        color: white;
       }
       .nav-link {
         padding: 1.5rem 1.5rem 1.25rem;
-        color: $white;
+        color: white;
         a {
-          color: $white;
+          color: white;
         }
         button {
           background: none!important;
@@ -79,7 +118,7 @@
           color: $primary;
         }
         &:active {
-          color: $white;
+          color: $primary;
         }
         &.active {
           color: $primary;

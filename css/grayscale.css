@@ -4,6 +4,7 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
  */
 
+@charset "UTF-8";
 #mainNav {
   min-height: 56px;
   background: #161616;
@@ -24,6 +25,57 @@
   color: #fff;
   font-weight: 700;
   padding: .9rem 0;
+}
+
+#mainNav .nav-link {
+  transition: none;
+  color: #fff;
+}
+
+#mainNav .nav-link:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+#mainNav .nav-link:active {
+  color: white;
+}
+
+#mainNav.navbar-shrink {
+  color: white;
+}
+
+#mainNav.navbar-shrink .navbar-brand {
+  color: white;
+}
+
+#mainNav.navbar-shrink .nav-link {
+  color: white;
+}
+
+#mainNav.navbar-shrink .nav-link a {
+  color: white;
+}
+
+#mainNav.navbar-shrink .nav-link button {
+  background: none !important;
+  color: #db0202;
+}
+
+#mainNav.navbar-shrink .nav-link:hover {
+  color: #db0202;
+}
+
+#mainNav.navbar-shrink .nav-link:active {
+  color: #db0202;
+}
+
+#mainNav.navbar-shrink .nav-link.active {
+  color: #db0202;
+  outline: none;
+}
+
+#mainNav .navbar-nav .nav-item {
+  color: #fff;
 }
 
 #mainNav .navbar-nav .nav-item:hover {
@@ -50,6 +102,7 @@
     padding-bottom: 0;
     border-bottom: none;
     background-color: #343a40;
+    color: white;
     transition: background-color 0.3s ease-in-out;
   }
   #mainNav .navbar-brand {
@@ -68,17 +121,17 @@
     color: white;
   }
   #mainNav.navbar-shrink {
-    background-color: #161616;
+    color: white;
   }
   #mainNav.navbar-shrink .navbar-brand {
-    color: #fff;
+    color: white;
   }
   #mainNav.navbar-shrink .nav-link {
     padding: 1.5rem 1.5rem 1.25rem;
-    color: #fff;
+    color: white;
   }
   #mainNav.navbar-shrink .nav-link a {
-    color: #fff;
+    color: white;
   }
   #mainNav.navbar-shrink .nav-link button {
     background: none !important;
@@ -89,7 +142,7 @@
     color: #db0202;
   }
   #mainNav.navbar-shrink .nav-link:active {
-    color: #fff;
+    color: #db0202;
   }
   #mainNav.navbar-shrink .nav-link.active {
     color: #db0202;
@@ -100,15 +153,13 @@
 
 .masthead.old-school {
   background-image: url("../img/top-old-school.gif");
+  padding-top: 56px;
   height: auto;
 }
 
 .masthead.new-school {
   background-image: url("../img/intro.jpg");
   height: available;
-}
-
-.masthead {
   position: relative;
   width: 100%;
   min-height: 35rem;
@@ -120,9 +171,36 @@
 }
 
 @media (min-width: 992px) {
-  .masthead {
+  .masthead.new-school {
     height: 100vh;
   }
+}
+
+@media (min-width: 1100px) {
+  .masthead.old-school {
+    min-height: 30rem;
+  }
+  .masthead {
+    position: relative;
+    width: 100%;
+    min-height: 35rem;
+    margin-top: 56px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+  }
+}
+
+.masthead {
+  width: 100%;
+  min-height: 10rem;
+  margin-top: 5rem;
+  -o-object-fit: contain;
+  object-fit: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
 }
 
 .btn {
@@ -203,6 +281,19 @@
   letter-spacing: 0.1vw;
 }
 
+.signup-section .new-school {
+  background-color: #fff;
+}
+
+.signup-section .new-school:hover {
+  background-color: rgba(219, 2, 2, 0.5);
+}
+
+.signup-section .old-school {
+  background: #ff0000;
+  background: linear-gradient(-45deg, #ff0000 0%, #ffff00 25%, #00ff00 50%, #00ffff 75%, #0000ff 100%);
+}
+
 .projects-section {
   padding: 10rem 0;
 }
@@ -249,6 +340,14 @@
   color: #dee2e6;
 }
 
+.contact-section .btn {
+  background-color: #fff;
+}
+
+.contact-section .btn:hover {
+  background-color: rgba(219, 2, 2, 0.5);
+}
+
 .contact-section h2 {
   color: #fff;
 }
@@ -290,6 +389,49 @@
 
 .contact-section .social a:active {
   color: #db0202;
+}
+
+.team-section h2 {
+  text-align: center;
+}
+
+.team-section.old-school h2 {
+  font-size: 4em;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: skew(0, -15deg) scale(1, 1.5);
+  -webkit-transform: skew(0, -15deg) scale(1, 1.5);
+  -moz-transform: skew(0, -15deg) scale(1, 1.5);
+  -o-transform: skew(0, -15deg) scale(1, 1.5);
+  -ms-transform: skew(0, -15deg) scale(1, 1.5);
+  font-family: Impact, serif;
+  background: #fdea00;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…EiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: linear-gradient(to bottom, #fdea00 0%, #fdcf00 44%, #fc2700 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdea00', endColorstr='#fc2700', GradientType=0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.team-section.old-school h3 {
+  font-size: 4em;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: Impact, sans-serif;
+  color: #24c0fd;
+  -webkit-text-stroke: 0.01em #0000aa;
+  filter: progid:DXImageTransform.Microsoft.Glow(Color=#0000aa,Strength=1);
+  text-shadow: 0.13em -0.13em 0px #0000aa;
+  letter-spacing: -0.05em;
 }
 
 body {
