@@ -1,5 +1,4 @@
-Web for a weekend event. Deployed to https://smijeva.github.io/bez-chybi-web. Implementation is on hold because the event is postponed to autumn 2020.
-
+Web for a weekend event. 
 Based on the template:
 # [Start Bootstrap - Grayscale](https://startbootstrap.com/template-overviews/grayscale/)
 
